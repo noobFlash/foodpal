@@ -6,15 +6,21 @@
 
 var UIController = (function () {
   var DOMstring = {
+    searchButton : '.btn',
+
+
 
   };
 
-  return{
+  return {
 
+    getDOMstrings : function () {
+        return DOMstring;
+    }
 
   };
 
-});
+})();
 
 var DataController = (function () {
 
@@ -23,8 +29,45 @@ var DataController = (function () {
 
 
     };
-});
+})();
 
 var controller = (function (DataCtrl,UICtrl) {
-  
+
+  var setupEventListeners =function () {
+    var DOM = UICtrl.getDOMstrings();
+
+    document.querySelector(DOM.searchButton).addEventListener('click',function () {
+      console.log("search");
+    });
+
+  };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    return {
+      init: function() {
+          console.log('Application has started.');
+          setupEventListeners();
+      }
+    };
+
+
+
+
 })(DataController,UIController);
+controller.init();

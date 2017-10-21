@@ -4,7 +4,7 @@ body {
 .navbar {
     position: relative;
     min-height: 50px;
-     margin-bottom:0px !important; 
+     margin-bottom:0px !important;
     border: 1px solid transparent;
 }
 a.navbar-brand {
@@ -13,6 +13,20 @@ a.navbar-brand {
 }
 item-name {
     font-size: 16px;
+}
+.name {
+    text-transform: capitalize;
+}
+.best-data {
+    text-align: center;
+}
+.plus {
+    color: green;
+    font-size: 12px;
+}
+.minus{
+  color: red;
+  font-size: 12px;
 }
 .form-control {
     display: block;
@@ -67,7 +81,20 @@ item-name {
     width: 80% !important;
     vertical-align: middle;
 }
-
+.col-lg-12 {
+    border: 1px solid;
+    border-color: #d8efb6;
+    border-bottom: 0px;
+    padding: 3%;
+    border-radius: 2px;
+}
+.col-md-3 {
+    width: 25% !important;
+}
+.item-name {
+    border-bottom: 1px solid;
+    margin-bottom: 2%;
+}
 @media (min-width: 576px){
 .jumbotron {
     padding: 14%;

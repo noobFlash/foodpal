@@ -36,6 +36,7 @@ body {
 a.navbar-brand {
     width: 100%;
     text-align: -webkit-center;
+    color: white;
 }
 item-name {
     font-size: 16px;

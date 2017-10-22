@@ -1,8 +1,8 @@
 <div class="jumbotron">
   <div class="container">
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="mutton curry" aria-label="Search">
-      <button class="btn" type="submit">Search</button>
+      <input class="form-control mr-sm-2" type="text" placeholder="mutton curry" aria-label="Search" #input>
+      <button class="btn" type="submit" (click)="onSearch(input.value)">Search</button>
     </form>
   </div>
 </div>

@@ -6,5 +6,7 @@ import { Component } from "@angular/core";
 })
 
 export class SearchComponent{
-
+  onSearch(value : string){
+    console.log(value);
+  }
 }

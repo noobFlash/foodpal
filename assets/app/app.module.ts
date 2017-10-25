@@ -9,6 +9,8 @@ import { BestFitSearchComponent } from "./best-fit-search/best-fit-search.compon
 
 import { AppComponent } from "./app.component";
 
+
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -18,7 +20,11 @@ import { AppComponent } from "./app.component";
         MainSearchComponent,
         BestFitSearchComponent
     ],
-    imports: [BrowserModule],
+    imports: [
+      BrowserModule,
+
+    ],
+    
     bootstrap: [AppComponent]
 })
 export class AppModule {
